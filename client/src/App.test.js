@@ -16,15 +16,32 @@ it('renders without crashing', () => {
 	wrapper.debug();
 });
 
-// it('Renders the div', ()=> {
-//     const wrapper = rtl.render(<App />)
-//     wrapper.debug(wrapper.queryByText('Display'))
+// it('Renders the div', () => {
+// 	const wrapper = rtl.render(<App />);
+// 	wrapper.debug(wrapper.queryByText('Display'));
 
-//     const div = wrapper.queryByText(/display/i)
-//     expect(div).toBeVisible()
-
-// })
+// 	const div = wrapper.queryByText(/display/i);
+// 	expect(div).toBeVisible();
+// });
 
 test('fake test', () => {
 	expect(true).toBeTruthy();
+});
+
+test('check to see if test can pass', async () => {
+	const wrapper = rtl.render(<App />);
+
+	expect(await wrapper.queryAllByText(/players/i));
+});
+
+test('verify is constructor is present', () => {
+	const wrapper = rtl.render(<App />);
+
+	wrapper.queryAllByText('constructor');
+});
+
+test('to verify div id', () => {
+	const wrapper = rtl.render(<App />);
+
+	wrapper.getByTestId('custom');
 });
