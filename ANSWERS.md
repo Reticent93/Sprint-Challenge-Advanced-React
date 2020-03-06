@@ -3,7 +3,7 @@
 
 - [ ] Name three lifecycle methods and their purposes.
         Mounting – Birth of your component
-        Update – Growth of your component
+        Update – Growth of your component 
         Unmount – Death of your component
 
 

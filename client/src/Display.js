@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Div1 = styled.div`
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	box-shadow: 0 4px 8px 0;
 	transition: 0.3s;
 	width: 350px;
 	min-height: 40px;
