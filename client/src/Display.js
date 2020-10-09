@@ -8,6 +8,7 @@ const Div1 = styled.div`
 	min-height: 40px;
 	margin: 60px;
 	padding: 60px;
+	border-radius: 15px
 `;
 
 const H1 = styled.h1`
